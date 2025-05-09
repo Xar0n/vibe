@@ -7,17 +7,17 @@ import { createClient } from '@/lib/supabase'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Recipe Sharing Platform",
-  description: "Share and discover delicious recipes",
+  title: "RecipeVerse - Делитесь своими рецептами",
+  description: "Платформа для обмена рецептами и кулинарными идеями",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <body className={inter.className}>
         <Header />
         {children}
